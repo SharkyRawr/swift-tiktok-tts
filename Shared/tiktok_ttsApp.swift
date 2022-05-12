@@ -12,6 +12,7 @@ struct tiktok_ttsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .navigationTitle("TikTok-TTS")
         }
     }
 }
