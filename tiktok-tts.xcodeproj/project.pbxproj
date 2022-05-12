@@ -13,6 +13,10 @@
 		E4DECBAD282D39250091792B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DECB9B282D39220091792B /* ContentView.swift */; };
 		E4DECBAE282D39250091792B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DECB9C282D39250091792B /* Assets.xcassets */; };
 		E4DECBAF282D39250091792B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DECB9C282D39250091792B /* Assets.xcassets */; };
+		E4DECBB9282D3E090091792B /* TikTokAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DECBB8282D3E090091792B /* TikTokAPI.swift */; };
+		E4DECBBA282D3E090091792B /* TikTokAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DECBB8282D3E090091792B /* TikTokAPI.swift */; };
+		E4DECBBC282D4B160091792B /* QuickType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DECBBB282D4B160091792B /* QuickType.swift */; };
+		E4DECBBD282D4B160091792B /* QuickType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DECBBB282D4B160091792B /* QuickType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,8 @@
 		E4DECBA1282D39250091792B /* tiktok-tts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tiktok-tts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DECBA7282D39250091792B /* tiktok-tts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tiktok-tts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DECBA9282D39250091792B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E4DECBB8282D3E090091792B /* TikTokAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokAPI.swift; sourceTree = "<group>"; };
+		E4DECBBB282D4B160091792B /* QuickType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 				E4DECB9A282D39220091792B /* tiktok_ttsApp.swift */,
 				E4DECB9B282D39220091792B /* ContentView.swift */,
 				E4DECB9C282D39250091792B /* Assets.xcassets */,
+				E4DECBB8282D3E090091792B /* TikTokAPI.swift */,
+				E4DECBBB282D4B160091792B /* QuickType.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -177,6 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DECBAC282D39250091792B /* ContentView.swift in Sources */,
+				E4DECBBC282D4B160091792B /* QuickType.swift in Sources */,
+				E4DECBB9282D3E090091792B /* TikTokAPI.swift in Sources */,
 				E4DECBAA282D39250091792B /* tiktok_ttsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DECBAD282D39250091792B /* ContentView.swift in Sources */,
+				E4DECBBD282D4B160091792B /* QuickType.swift in Sources */,
+				E4DECBBA282D3E090091792B /* TikTokAPI.swift in Sources */,
 				E4DECBAB282D39250091792B /* tiktok_ttsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
