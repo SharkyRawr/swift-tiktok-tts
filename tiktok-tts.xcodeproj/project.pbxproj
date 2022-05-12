@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4B9A7D2282D53C50084B3C1 /* Gibberish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9A7D1282D53C50084B3C1 /* Gibberish.swift */; };
+		E4B9A7D3282D53C50084B3C1 /* Gibberish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9A7D1282D53C50084B3C1 /* Gibberish.swift */; };
 		E4DECBAA282D39250091792B /* tiktok_ttsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DECB9A282D39220091792B /* tiktok_ttsApp.swift */; };
 		E4DECBAB282D39250091792B /* tiktok_ttsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DECB9A282D39220091792B /* tiktok_ttsApp.swift */; };
 		E4DECBAC282D39250091792B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DECB9B282D39220091792B /* ContentView.swift */; };
@@ -20,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4B9A7D1282D53C50084B3C1 /* Gibberish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gibberish.swift; sourceTree = "<group>"; };
 		E4DECB9A282D39220091792B /* tiktok_ttsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tiktok_ttsApp.swift; sourceTree = "<group>"; };
 		E4DECB9B282D39220091792B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4DECB9C282D39250091792B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 				E4DECB9C282D39250091792B /* Assets.xcassets */,
 				E4DECBB8282D3E090091792B /* TikTokAPI.swift */,
 				E4DECBBB282D4B160091792B /* QuickType.swift */,
+				E4B9A7D1282D53C50084B3C1 /* Gibberish.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -187,6 +191,7 @@
 				E4DECBAC282D39250091792B /* ContentView.swift in Sources */,
 				E4DECBBC282D4B160091792B /* QuickType.swift in Sources */,
 				E4DECBB9282D3E090091792B /* TikTokAPI.swift in Sources */,
+				E4B9A7D2282D53C50084B3C1 /* Gibberish.swift in Sources */,
 				E4DECBAA282D39250091792B /* tiktok_ttsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +203,7 @@
 				E4DECBAD282D39250091792B /* ContentView.swift in Sources */,
 				E4DECBBD282D4B160091792B /* QuickType.swift in Sources */,
 				E4DECBBA282D3E090091792B /* TikTokAPI.swift in Sources */,
+				E4B9A7D3282D53C50084B3C1 /* Gibberish.swift in Sources */,
 				E4DECBAB282D39250091792B /* tiktok_ttsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

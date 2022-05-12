@@ -18,7 +18,8 @@ public enum TikTokAPIError: Error {
 public class TikTokAPI {
     static let api_url: String = "https://api16-normal-useast5.us.tiktokv.com/media/api/text/speech/invoke/?text_speaker=%@&req_text=%@&speaker_map_type=0";
     static func Speak(text: String, completion: @escaping (TTS)->(), error: @escaping (TikTokAPIError)->()) throws -> Void {
-        guard let myUrl = URL(string: String(format: api_url, "en_us_001", text)) else {
+        let fixedText = text.replacingOccurrences(of: " ", with: "%20")
+        guard let myUrl = URL(string: String(format: api_url, "en_us_001", fixedText)) else {
             throw TikTokAPIError.InvalidURLError
         }
         

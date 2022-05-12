@@ -15,6 +15,10 @@ struct ContentView: View {
     
     @State private var avAudio: AVAudioPlayer!
     
+    func speakGibberish() -> Void {
+        txt = GenerateGibberish()
+    }
+    
     func speak() -> Void {
         do {
             try TikTokAPI.Speak(text: txt, completion: { json in
@@ -55,10 +59,15 @@ struct ContentView: View {
                 .border(.secondary)
                 .textFieldStyle(.roundedBorder)
                 .padding()
-            
-            Button(action: speak) {
-                Text("Speak")
+            HStack(alignment: .center) {
+                Button(action: speakGibberish) {
+                    Text("Random gibberish")
+                }
+                Button(action: speak) {
+                    Text("Speak")
+                }
             }
+            .padding([.bottom], 20)
         }
         .alert(isPresented: $showError) {
             Alert(title: Text("👏 Error"), message: Text(alertMsg), dismissButton: .default(Text("Got it")))
@@ -69,5 +78,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .navigationTitle("TikTok-TTS")
     }
 }
