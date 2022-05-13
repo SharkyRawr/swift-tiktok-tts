@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var txt: String = ""
     @State private var showError: Bool = false
     @State private var alertMsg: String = ""
+    @State private var voice: String = TikTokVoice.VoiceEnglishFem1.rawValue
     
     @State private var avAudio: AVAudioPlayer!
     
@@ -20,9 +21,10 @@ struct ContentView: View {
     }
     
     func speak() -> Void {
+        let v = TikTokVoice.init(rawValue: voice)!
         do {
-            try TikTokAPI.Speak(text: txt, completion: { json in
-                txt = json.statusMsg
+            try TikTokAPI.Speak(voice: v, text: txt, completion: { json in
+                // txt = json.statusMsg
                 let data = Data(base64Encoded: json.data.vStr)!
                 do {
                     avAudio = try AVAudioPlayer(data: data);
@@ -52,6 +54,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack(alignment: HorizontalAlignment.center) {
+            Picker(selection: $voice, label: Text("Voice")){
+                ForEach(TikTokVoice.allCases, id: \.self) {
+                    value in
+                    Text(String(describing: value)).tag(value.rawValue)
+                }
+            }
+            .padding()
             TextField("Text to Speech", text: $txt)
                 .onSubmit {
                     speak();
