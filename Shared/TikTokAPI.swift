@@ -101,6 +101,8 @@ public class TikTokAPI {
     static let api_url: String = "https://api16-normal-useast5.us.tiktokv.com/media/api/text/speech/invoke/?text_speaker=%@&req_text=%@&speaker_map_type=0";
     static func Speak(voice: TikTokVoice, text: String, completion: @escaping (TTS)->(), error: @escaping (TikTokAPIError)->()) throws -> Void {
         let fixedText = text.replacingOccurrences(of: " ", with: "%20")
+            .replacingOccurrences(of: "&", with: " and ")
+            .replacingOccurrences(of: "+", with: " plus ")
         guard let myUrl = URL(string: String(format: api_url, voice.rawValue, fixedText)) else {
             throw TikTokAPIError.InvalidURLError
         }
