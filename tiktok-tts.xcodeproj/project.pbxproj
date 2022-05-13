@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4B26248282EE61B0019A38C /* playstore.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B26245282EE61A0019A38C /* playstore.png */; };
+		E4B26249282EE61B0019A38C /* playstore.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B26245282EE61A0019A38C /* playstore.png */; };
+		E4B2624A282EE61B0019A38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B26246282EE61A0019A38C /* Assets.xcassets */; };
+		E4B2624B282EE61B0019A38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B26246282EE61A0019A38C /* Assets.xcassets */; };
+		E4B2624C282EE61B0019A38C /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B26247282EE61A0019A38C /* appstore.png */; };
+		E4B2624D282EE61B0019A38C /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B26247282EE61A0019A38C /* appstore.png */; };
 		E4B9A7D2282D53C50084B3C1 /* Gibberish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9A7D1282D53C50084B3C1 /* Gibberish.swift */; };
 		E4B9A7D3282D53C50084B3C1 /* Gibberish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B9A7D1282D53C50084B3C1 /* Gibberish.swift */; };
 		E4DECBAA282D39250091792B /* tiktok_ttsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DECB9A282D39220091792B /* tiktok_ttsApp.swift */; };
@@ -22,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4B26245282EE61A0019A38C /* playstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playstore.png; sourceTree = "<group>"; };
+		E4B26246282EE61A0019A38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4B26247282EE61A0019A38C /* appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstore.png; sourceTree = "<group>"; };
 		E4B9A7D1282D53C50084B3C1 /* Gibberish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gibberish.swift; sourceTree = "<group>"; };
 		E4DECB9A282D39220091792B /* tiktok_ttsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tiktok_ttsApp.swift; sourceTree = "<group>"; };
 		E4DECB9B282D39220091792B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +63,9 @@
 		E4DECB94282D39220091792B = {
 			isa = PBXGroup;
 			children = (
+				E4B26247282EE61A0019A38C /* appstore.png */,
+				E4B26246282EE61A0019A38C /* Assets.xcassets */,
+				E4B26245282EE61A0019A38C /* playstore.png */,
 				E4DECB99282D39220091792B /* Shared */,
 				E4DECBA8282D39250091792B /* macOS */,
 				E4DECBA2282D39250091792B /* Products */,
@@ -170,6 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DECBAE282D39250091792B /* Assets.xcassets in Resources */,
+				E4B2624C282EE61B0019A38C /* appstore.png in Resources */,
+				E4B2624A282EE61B0019A38C /* Assets.xcassets in Resources */,
+				E4B26248282EE61B0019A38C /* playstore.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +193,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DECBAF282D39250091792B /* Assets.xcassets in Resources */,
+				E4B2624D282EE61B0019A38C /* appstore.png in Resources */,
+				E4B2624B282EE61B0019A38C /* Assets.xcassets in Resources */,
+				E4B26249282EE61B0019A38C /* playstore.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
