@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AVFAudio
+import UniformTypeIdentifiers
 
 struct ContentView: View {
     @State private var txt: String = ""
@@ -52,6 +53,38 @@ struct ContentView: View {
         }
     }
     
+    @State private var showPicker: Bool = false
+    
+    func speakExport() {
+        let v = TikTokVoice.init(rawValue: voice)!
+        let panel = NSSavePanel()
+        panel.allowedContentTypes = [UTType.mp3]
+        if panel.runModal() == .OK {
+            let exportURL = panel.url
+            do {
+                try TikTokAPI.Speak(voice: v, text: txt, completion: { json in
+                    // txt = json.statusMsg
+                    let data = Data(base64Encoded: json.data.vStr)!
+                    do {
+                        try data.write(to: exportURL!)
+                    } catch let err {
+                        alertMsg = err.localizedDescription
+                        showError = true
+                    }
+                    
+                }, error: { TikTokAPIError in
+                    alertMsg = TikTokAPIError.localizedDescription
+                    showError = true
+                })
+            }
+            catch let err {
+                alertMsg = err.localizedDescription
+                showError = true
+            }
+            
+        }
+    }
+    
     var body: some View {
         VStack(alignment: HorizontalAlignment.center) {
             Picker(selection: $voice, label: Text("Voice")){
@@ -75,11 +108,17 @@ struct ContentView: View {
                 Button(action: speak) {
                     Text("Speak")
                 }
+                Button(action: speakExport) {
+                    Text("Export as MP3")
+                }
             }
             .padding([.bottom], 20)
         }
         .alert(isPresented: $showError) {
             Alert(title: Text("👏 Error"), message: Text(alertMsg), dismissButton: .default(Text("Got it")))
+        }
+        .sheet(isPresented: $showPicker) {
+            
         }
     }
 }
